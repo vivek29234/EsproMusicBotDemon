@@ -3,5 +3,5 @@
 </h2>
 
 <h2 alingn="centre">
-[![Deploy to Heroku](https://example.com/path/to/your-image.png)](https://dashboard.heroku.com/new?template=https://github.com/TeamEspro/EsproMusicBot)
+h
 </h2>

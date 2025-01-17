@@ -1,9 +1,9 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from Espromusic import app
-from Espromusic.misc import SUDOERS
-from Espromusic.utils.database import autoend_off, autoend_on
+from EsproMusic import app
+from EsproMusic.misc import SUDOERS
+from EsproMusic.utils.database import autoend_off, autoend_on
 
 
 @app.on_message(filters.command("autoend") & SUDOERS)

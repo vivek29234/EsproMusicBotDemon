@@ -6,12 +6,12 @@ from pyrogram.errors import FloodWait
 from pyrogram.types import CallbackQuery, InputMediaPhoto, Message
 
 import config
-from Espromusic import app
-from Espromusic.misc import db
-from Espromusic.utils import LoyBin, get_channeplayCB, seconds_to_min
-from Espromusic.utils.database import get_cmode, is_active_chat, is_music_playing
-from Espromusic.utils.decorators.language import language, languageCB
-from Espromusic.utils.inline import queue_back_markup, queue_markup
+from EsproMusic import app
+from EsproMusic.misc import db
+from EsproMusic.utils import LoyBin, get_channeplayCB, seconds_to_min
+from EsproMusic.utils.database import get_cmode, is_active_chat, is_Music_playing
+from EsproMusic.utils.decorators.language import language, languageCB
+from EsproMusic.utils.inline import queue_back_markup, queue_markup
 from config import BANNED_USERS
 
 basic = {}
@@ -104,7 +104,7 @@ async def get_queue(client, message: Message, _):
                 await asyncio.sleep(5)
                 if await is_active_chat(chat_id):
                     if basic[videoid]:
-                        if await is_music_playing(chat_id):
+                        if await is_Music_playing(chat_id):
                             try:
                                 buttons = queue_markup(
                                     _,
@@ -246,7 +246,7 @@ async def queue_back(client, CallbackQuery: CallbackQuery, _):
                 await asyncio.sleep(5)
                 if await is_active_chat(chat_id):
                     if basic[videoid]:
-                        if await is_music_playing(chat_id):
+                        if await is_Music_playing(chat_id):
                             try:
                                 buttons = queue_markup(
                                     _,

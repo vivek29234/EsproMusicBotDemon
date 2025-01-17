@@ -1,8 +1,8 @@
 import random
 from typing import Dict, List, Union
 
-from Espromusic import userbot
-from Espromusic.core.mongo import mongodb
+from EsproMusic import userbot
+from EsproMusic.core.mongo import mongodb
 
 authdb = mongodb.adminauth
 authuserdb = mongodb.authuser
@@ -67,7 +67,7 @@ async def set_assistant_new(chat_id, number):
 
 
 async def set_assistant(chat_id):
-    from Espromusic.core.userbot import assistants
+    from EsproMusic.core.userbot import assistants
 
     ran_assistant = random.choice(assistants)
     assistantdict[chat_id] = ran_assistant
@@ -81,7 +81,7 @@ async def set_assistant(chat_id):
 
 
 async def get_assistant(chat_id: int) -> str:
-    from Espromusic.core.userbot import assistants
+    from EsproMusic.core.userbot import assistants
 
     assistant = assistantdict.get(chat_id)
     if not assistant:
@@ -108,7 +108,7 @@ async def get_assistant(chat_id: int) -> str:
 
 
 async def set_calls_assistant(chat_id):
-    from Espromusic.core.userbot import assistants
+    from EsproMusic.core.userbot import assistants
 
     ran_assistant = random.choice(assistants)
     assistantdict[chat_id] = ran_assistant
@@ -121,7 +121,7 @@ async def set_calls_assistant(chat_id):
 
 
 async def group_assistant(self, chat_id: int) -> int:
-    from Espromusic.core.userbot import assistants
+    from EsproMusic.core.userbot import assistants
 
     assistant = assistantdict.get(chat_id)
     if not assistant:
@@ -298,18 +298,18 @@ async def set_lang(chat_id: int, lang: str):
     await langdb.update_one({"chat_id": chat_id}, {"$set": {"lang": lang}}, upsert=True)
 
 
-async def is_music_playing(chat_id: int) -> bool:
+async def is_Music_playing(chat_id: int) -> bool:
     mode = pause.get(chat_id)
     if not mode:
         return False
     return mode
 
 
-async def music_on(chat_id: int):
+async def Music_on(chat_id: int):
     pause[chat_id] = True
 
 
-async def music_off(chat_id: int):
+async def Music_off(chat_id: int):
     pause[chat_id] = False
 
 

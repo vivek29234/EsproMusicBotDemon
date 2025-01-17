@@ -10,7 +10,7 @@ from time import time
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
-from Espromusic import app
+from EsproMusic import app
 from config import OWNER_ID
 
 

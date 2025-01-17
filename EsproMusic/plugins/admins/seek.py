@@ -1,11 +1,11 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from Espromusic import YouTube, app
-from Espromusic.core.call import Loy
-from Espromusic.misc import db
-from Espromusic.utils import AdminRightsCheck, seconds_to_min
-from Espromusic.utils.inline import close_markup
+from EsproMusic import YouTube, app
+from EsproMusic.core.call import Loy
+from EsproMusic.misc import db
+from EsproMusic.utils import AdminRightsCheck, seconds_to_min
+from EsproMusic.utils.inline import close_markup
 from config import BANNED_USERS
 
 

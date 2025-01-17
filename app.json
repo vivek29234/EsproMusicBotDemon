@@ -1,13 +1,13 @@
 {
     "name": "𝐄𝗌ρ𝗋ⱺ 𝐌ᥙsiᥴ [ ɴᴏ ᴀᴅʂ ] 🕊",
-    "description": "A Telegram music Player Bot, written in Python with Pyrogram and Py-Tgcalls.",
+    "description": "A Telegram Music Player Bot, written in Python with Pyrogram and Py-Tgcalls.",
     "logo": "https://te.legra.ph/file/b8a0c1a00db3e57522b53.jpg",
     "keywords": [
     "python3",
     "telegram",
     "bot",
     "Espro",
-    "musicBot",
+    "MusicBot",
     "telegram-bot",
     "pyrogram"
     ],

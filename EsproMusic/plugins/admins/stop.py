@@ -1,11 +1,11 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from Espromusic import app
-from Espromusic.core.call import Loy
-from Espromusic.utils.database import set_loop
-from Espromusic.utils.decorators import AdminRightsCheck
-from Espromusic.utils.inline import close_markup
+from EsproMusic import app
+from EsproMusic.core.call import Loy
+from EsproMusic.utils.database import set_loop
+from EsproMusic.utils.decorators import AdminRightsCheck
+from EsproMusic.utils.inline import close_markup
 from config import BANNED_USERS
 
 
@@ -13,7 +13,7 @@ from config import BANNED_USERS
     filters.command(["end", "stop", "cend", "cstop"]) & filters.group & ~BANNED_USERS
 )
 @AdminRightsCheck
-async def stop_music(cli, message: Message, _, chat_id):
+async def stop_Music(cli, message: Message, _, chat_id):
     if not len(message.command) == 1:
         return
     await Loy.stop_stream(chat_id)

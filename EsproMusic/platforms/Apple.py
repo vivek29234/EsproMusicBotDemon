@@ -8,8 +8,8 @@ from youtubesearchpython.__future__ import VideosSearch
 
 class AppleAPI:
     def __init__(self):
-        self.regex = r"^(https:\/\/music.apple.com\/)(.*)$"
-        self.base = "https://music.apple.com/in/playlist/"
+        self.regex = r"^(https:\/\/Music.apple.com\/)(.*)$"
+        self.base = "https://Music.apple.com/in/playlist/"
 
     async def valid(self, link: str):
         if re.search(self.regex, link):
@@ -58,7 +58,7 @@ class AppleAPI:
                     return False
                 html = await response.text()
         soup = BeautifulSoup(html, "html.parser")
-        applelinks = soup.find_all("meta", attrs={"property": "music:song"})
+        applelinks = soup.find_all("meta", attrs={"property": "Music:song"})
         results = []
         for item in applelinks:
             try:

@@ -1,16 +1,16 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from Esproritik import app
-from Esproritik.utils import extract_user, int_to_alpha
-from Esproritik.utils.database import (
+from Espromusic import app
+from Espromusic.utils import extract_user, int_to_alpha
+from Espromusic.utils.database import (
     delete_authuser,
     get_authuser,
     get_authuser_names,
     save_authuser,
 )
-from Esproritik.utils.decorators import AdminActual, language
-from Esproritik.utils.inline import close_markup
+from Espromusic.utils.decorators import AdminActual, language
+from Espromusic.utils.inline import close_markup
 from config import BANNED_USERS, adminlist
 
 

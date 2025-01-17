@@ -1,9 +1,9 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from Esproritik import app
-from Esproritik.misc import SUDOERS
-from Esproritik.utils.database import (
+from Espromusic import app
+from Espromusic.misc import SUDOERS
+from Espromusic.utils.database import (
     get_lang,
     is_maintenance,
     maintenance_off,

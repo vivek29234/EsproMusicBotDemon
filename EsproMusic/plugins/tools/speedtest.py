@@ -4,9 +4,9 @@ import speedtest
 from pyrogram import filters
 from pyrogram.types import Message
 
-from Esproritik import app
-from Esproritik.misc import SUDOERS
-from Esproritik.utils.decorators.language import language
+from Espromusic import app
+from Espromusic.misc import SUDOERS
+from Espromusic.utils.decorators.language import language
 
 
 def testspeed(m, _):

@@ -1,8 +1,8 @@
 import asyncio
 from typing import Union
 
-from Esproritik.misc import db
-from Esproritik.utils.formatters import check_duration, seconds_to_min
+from Espromusic.misc import db
+from Espromusic.utils.formatters import check_duration, seconds_to_min
 from config import autoclean, time_to_seconds
 
 

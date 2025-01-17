@@ -2,14 +2,14 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, Message
 
 import config
-from Esproritik import YouTube, app
-from Esproritik.core.call import Loy
-from Esproritik.misc import db
-from Esproritik.utils.database import get_loop
-from Esproritik.utils.decorators import AdminRightsCheck
-from Esproritik.utils.inline import close_markup, stream_markup
-from Esproritik.utils.stream.autoclear import auto_clean
-from Esproritik.utils.thumbnails import get_thumb
+from Espromusic import YouTube, app
+from Espromusic.core.call import Loy
+from Espromusic.misc import db
+from Espromusic.utils.database import get_loop
+from Espromusic.utils.decorators import AdminRightsCheck
+from Espromusic.utils.inline import close_markup, stream_markup
+from Espromusic.utils.stream.autoclear import auto_clean
+from Espromusic.utils.thumbnails import get_thumb
 from config import BANNED_USERS
 
 

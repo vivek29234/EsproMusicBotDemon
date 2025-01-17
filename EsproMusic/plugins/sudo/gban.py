@@ -4,10 +4,10 @@ from pyrogram import filters
 from pyrogram.errors import FloodWait
 from pyrogram.types import Message
 
-from Esproritik import app
-from Esproritik.misc import SUDOERS
-from Esproritik.utils import get_readable_time
-from Esproritik.utils.database import (
+from Espromusic import app
+from Espromusic.misc import SUDOERS
+from Espromusic.utils import get_readable_time
+from Espromusic.utils.database import (
     add_banned_user,
     get_banned_count,
     get_banned_users,
@@ -15,8 +15,8 @@ from Esproritik.utils.database import (
     is_banned_user,
     remove_banned_user,
 )
-from Esproritik.utils.decorators.language import language
-from Esproritik.utils.extraction import extract_user
+from Espromusic.utils.decorators.language import language
+from Espromusic.utils.extraction import extract_user
 from config import BANNED_USERS
 
 

@@ -1,11 +1,11 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from Esproritik import app
-from Esproritik.misc import SUDOERS
-from Esproritik.utils.database import add_gban_user, remove_gban_user
-from Esproritik.utils.decorators.language import language
-from Esproritik.utils.extraction import extract_user
+from Espromusic import app
+from Espromusic.misc import SUDOERS
+from Espromusic.utils.database import add_gban_user, remove_gban_user
+from Espromusic.utils.decorators.language import language
+from Espromusic.utils.extraction import extract_user
 from config import BANNED_USERS
 
 

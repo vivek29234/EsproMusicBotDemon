@@ -2,9 +2,9 @@ from pyrogram import filters
 from pyrogram.types import Message
 from unidecode import unidecode
 
-from Esproritik import app
-from Esproritik.misc import SUDOERS
-from Esproritik.utils.database import (
+from Espromusic import app
+from Espromusic.misc import SUDOERS
+from Espromusic.utils.database import (
     get_active_chats,
     get_active_video_chats,
     remove_active_chat,

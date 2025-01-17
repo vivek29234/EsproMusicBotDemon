@@ -1,9 +1,9 @@
 from strings import get_string
 
-from Esproritik import app
-from Esproritik.misc import SUDOERS
+from Espromusic import app
+from Espromusic.misc import SUDOERS
 from config import SUPPORT_CHAT
-from Esproritik.utils.database import get_lang, is_maintenance
+from Espromusic.utils.database import get_lang, is_maintenance
 
 
 def language(mystic):

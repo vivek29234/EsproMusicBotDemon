@@ -5,12 +5,12 @@ from pyrogram import filters
 from pyrogram.enums import ChatMembersFilter
 from pyrogram.types import CallbackQuery, Message
 
-from Esproritik import app
-from Esproritik.core.call import Loy
-from Esproritik.misc import db
-from Esproritik.utils.database import get_assistant, get_authuser_names, get_cmode
-from Esproritik.utils.decorators import ActualAdminCB, AdminActual, language
-from Esproritik.utils.formatters import alpha_to_int, get_readable_time
+from Espromusic import app
+from Espromusic.core.call import Loy
+from Espromusic.misc import db
+from Espromusic.utils.database import get_assistant, get_authuser_names, get_cmode
+from Espromusic.utils.decorators import ActualAdminCB, AdminActual, language
+from Espromusic.utils.formatters import alpha_to_int, get_readable_time
 from config import BANNED_USERS, adminlist, lyrical
 
 rel = {}

@@ -4,15 +4,15 @@ from datetime import datetime
 from pyrogram.enums import ChatType
 
 import config
-from Esproritik import app
-from Esproritik.core.call import Loy, autoend
-from Esproritik.utils.database import get_client, is_active_chat, is_autoend
+from Espromusic import app
+from Espromusic.core.call import Loy, autoend
+from Espromusic.utils.database import get_client, is_active_chat, is_autoend
 
 
 async def auto_leave():
     if config.AUTO_LEAVING_ASSISTANT:
         while not await asyncio.sleep(900):
-            from Esproritik.core.userbot import assistants
+            from Espromusic.core.userbot import assistants
 
             for num in assistants:
                 client = await get_client(num)

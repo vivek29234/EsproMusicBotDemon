@@ -10,15 +10,15 @@ from git.exc import GitCommandError, InvalidGitRepositoryError
 from pyrogram import filters
 
 import config
-from Esproritik import app
-from Esproritik.misc import HAPP, SUDOERS, XCB
-from Esproritik.utils.database import (
+from Espromusic import app
+from Espromusic.misc import HAPP, SUDOERS, XCB
+from Espromusic.utils.database import (
     get_active_chats,
     remove_active_chat,
     remove_active_video_chat,
 )
-from Esproritik.utils.decorators.language import language
-from Esproritik.utils.pastebin import LoyBin
+from Espromusic.utils.decorators.language import language
+from Espromusic.utils.pastebin import LoyBin
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 

@@ -3,11 +3,11 @@ from datetime import datetime
 from pyrogram import filters
 from pyrogram.types import Message
 
-from Esproritik import app
-from Esproritik.core.call import Loy
-from Esproritik.utils import bot_sys_stats
-from Esproritik.utils.decorators.language import language
-from Esproritik.utils.inline import supp_markup
+from Espromusic import app
+from Espromusic.core.call import Loy
+from Espromusic.utils import bot_sys_stats
+from Espromusic.utils.decorators.language import language
+from Espromusic.utils.inline import supp_markup
 from config import BANNED_USERS, PING_IMG_URL
 
 

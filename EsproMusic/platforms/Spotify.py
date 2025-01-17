@@ -56,9 +56,9 @@ class SpotifyAPI:
         playlist_id = playlist["id"]
         results = []
         for item in playlist["tracks"]["items"]:
-            ritik_track = item["track"]
-            info = ritik_track["name"]
-            for artist in ritik_track["artists"]:
+            music_track = item["track"]
+            info = music_track["name"]
+            for artist in music_track["artists"]:
                 fetched = f' {artist["name"]}'
                 if "Various Artists" not in fetched:
                     info += fetched

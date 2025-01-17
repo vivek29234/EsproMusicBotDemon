@@ -1,12 +1,12 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from Esproritik import app
-from Esproritik.misc import SUDOERS
-from Esproritik.utils.database import add_sudo, remove_sudo
-from Esproritik.utils.decorators.language import language
-from Esproritik.utils.extraction import extract_user
-from Esproritik.utils.inline import close_markup
+from Espromusic import app
+from Espromusic.misc import SUDOERS
+from Espromusic.utils.database import add_sudo, remove_sudo
+from Espromusic.utils.decorators.language import language
+from Espromusic.utils.extraction import extract_user
+from Espromusic.utils.inline import close_markup
 from config import BANNED_USERS, OWNER_ID
 
 

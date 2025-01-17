@@ -1,9 +1,9 @@
 from pyrogram import filters
 
-from Esproritik import YouTube, app
-from Esproritik.utils.channelplay import get_channeplayCB
-from Esproritik.utils.decorators.language import languageCB
-from Esproritik.utils.stream.stream import stream
+from Espromusic import YouTube, app
+from Espromusic.utils.channelplay import get_channeplayCB
+from Espromusic.utils.decorators.language import languageCB
+from Espromusic.utils.stream.stream import stream
 from config import BANNED_USERS
 
 

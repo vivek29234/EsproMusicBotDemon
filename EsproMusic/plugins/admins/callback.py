@@ -3,25 +3,25 @@ import asyncio
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from EsproMusic import YouTube, app
-from EsproMusic.core.call import Loy
-from EsproMusic.misc import SUDOERS, db
-from EsproMusic.utils.database import (
+from Esproritik import YouTube, app
+from Esproritik.core.call import Loy
+from Esproritik.misc import SUDOERS, db
+from Esproritik.utils.database import (
     get_active_chats,
     get_lang,
     get_upvote_count,
     is_active_chat,
-    is_music_playing,
+    is_ritik_playing,
     is_nonadmin_chat,
-    music_off,
-    music_on,
+    ritik_off,
+    ritik_on,
     set_loop,
 )
-from EsproMusic.utils.decorators.language import languageCB
-from EsproMusic.utils.formatters import seconds_to_min
-from EsproMusic.utils.inline import close_markup, stream_markup, stream_markup_timer
-from EsproMusic.utils.stream.autoclear import auto_clean
-from EsproMusic.utils.thumbnails import get_thumb
+from Esproritik.utils.decorators.language import languageCB
+from Esproritik.utils.formatters import seconds_to_min
+from Esproritik.utils.inline import close_markup, stream_markup, stream_markup_timer
+from Esproritik.utils.stream.autoclear import auto_clean
+from Esproritik.utils.thumbnails import get_thumb
 from config import (
     BANNED_USERS,
     SUPPORT_CHAT,
@@ -132,19 +132,19 @@ async def del_back_playlist(client, CallbackQuery, _):
                             _["admin_14"], show_alert=True
                         )
     if command == "Pause":
-        if not await is_music_playing(chat_id):
+        if not await is_ritik_playing(chat_id):
             return await CallbackQuery.answer(_["admin_1"], show_alert=True)
         await CallbackQuery.answer()
-        await music_off(chat_id)
+        await ritik_off(chat_id)
         await Loy.pause_stream(chat_id)
         await CallbackQuery.message.reply_text(
             _["admin_2"].format(mention), reply_markup=close_markup(_)
         )
     elif command == "Resume":
-        if await is_music_playing(chat_id):
+        if await is_ritik_playing(chat_id):
             return await CallbackQuery.answer(_["admin_3"], show_alert=True)
         await CallbackQuery.answer()
-        await music_on(chat_id)
+        await ritik_on(chat_id)
         await Loy.resume_stream(chat_id)
         await CallbackQuery.message.reply_text(
             _["admin_4"].format(mention), reply_markup=close_markup(_)
@@ -355,7 +355,7 @@ async def markup_timer():
         active_chats = await get_active_chats()
         for chat_id in active_chats:
             try:
-                if not await is_music_playing(chat_id):
+                if not await is_ritik_playing(chat_id):
                     continue
                 playing = db.get(chat_id)
                 if not playing:

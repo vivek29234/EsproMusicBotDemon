@@ -1,10 +1,10 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from EsproMusic import app
-from EsproMusic.utils.database import get_loop, set_loop
-from EsproMusic.utils.decorators import AdminRightsCheck
-from EsproMusic.utils.inline import close_markup
+from Esproritik import app
+from Esproritik.utils.database import get_loop, set_loop
+from Esproritik.utils.decorators import AdminRightsCheck
+from Esproritik.utils.inline import close_markup
 from config import BANNED_USERS
 
 

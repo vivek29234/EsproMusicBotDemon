@@ -9,13 +9,13 @@ from pyrogram.types import InputMediaPhoto, Message
 from pytgcalls.__version__ import __version__ as pytgver
 
 import config
-from EsproMusic import app
-from EsproMusic.core.userbot import assistants
-from EsproMusic.misc import SUDOERS, mongodb
-from EsproMusic.plugins import ALL_MODULES
-from EsproMusic.utils.database import get_served_chats, get_served_users, get_sudoers
-from EsproMusic.utils.decorators.language import language, languageCB
-from EsproMusic.utils.inline.stats import back_stats_buttons, stats_buttons
+from Esproritik import app
+from Esproritik.core.userbot import assistants
+from Esproritik.misc import SUDOERS, mongodb
+from Esproritik.plugins import ALL_MODULES
+from Esproritik.utils.database import get_served_chats, get_served_users, get_sudoers
+from Esproritik.utils.decorators.language import language, languageCB
+from Esproritik.utils.inline.stats import back_stats_buttons, stats_buttons
 from config import BANNED_USERS
 
 

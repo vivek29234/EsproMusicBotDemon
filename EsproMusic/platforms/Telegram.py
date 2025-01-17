@@ -6,8 +6,8 @@ from typing import Union
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Voice
 
 import config
-from EsproMusic import app
-from EsproMusic.utils.formatters import (
+from Esproritik import app
+from Esproritik.utils.formatters import (
     check_duration,
     convert_bytes,
     get_readable_time,

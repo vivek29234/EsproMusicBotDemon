@@ -17,25 +17,25 @@ from pytgcalls.types.input_stream.quality import HighQualityAudio, MediumQuality
 from pytgcalls.types.stream import StreamAudioEnded
 
 import config
-from EsproMusic import LOGGER, YouTube, app
-from EsproMusic.misc import db
-from EsproMusic.utils.database import (
+from Esproritik import LOGGER, YouTube, app
+from Esproritik.misc import db
+from Esproritik.utils.database import (
     add_active_chat,
     add_active_video_chat,
     get_lang,
     get_loop,
     group_assistant,
     is_autoend,
-    music_on,
+    ritik_on,
     remove_active_chat,
     remove_active_video_chat,
     set_loop,
 )
-from EsproMusic.utils.exceptions import AssistantErr
-from EsproMusic.utils.formatters import check_duration, seconds_to_min, speed_converter
-from EsproMusic.utils.inline.play import stream_markup
-from EsproMusic.utils.stream.autoclear import auto_clean
-from EsproMusic.utils.thumbnails import get_thumb
+from Esproritik.utils.exceptions import AssistantErr
+from Esproritik.utils.formatters import check_duration, seconds_to_min, speed_converter
+from Esproritik.utils.inline.play import stream_markup
+from Esproritik.utils.stream.autoclear import auto_clean
+from Esproritik.utils.thumbnails import get_thumb
 from strings import get_string
 
 autoend = {}
@@ -320,7 +320,7 @@ class Call(PyTgCalls):
         except TelegramServerError:
             raise AssistantErr(_["call_10"])
         await add_active_chat(chat_id)
-        await music_on(chat_id)
+        await ritik_on(chat_id)
         if video:
             await add_active_video_chat(chat_id)
         if await is_autoend():

@@ -6,22 +6,22 @@ from pyrogram.types import InlineKeyboardMarkup, InputMediaPhoto, Message
 from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
-from EsproMusic import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
-from EsproMusic.core.call import Loy
-from EsproMusic.utils import seconds_to_min, time_to_seconds
-from EsproMusic.utils.channelplay import get_channeplayCB
-from EsproMusic.utils.decorators.language import languageCB
-from EsproMusic.utils.decorators.play import PlayWrapper
-from EsproMusic.utils.formatters import formats
-from EsproMusic.utils.inline import (
+from Esproritik import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
+from Esproritik.core.call import Loy
+from Esproritik.utils import seconds_to_min, time_to_seconds
+from Esproritik.utils.channelplay import get_channeplayCB
+from Esproritik.utils.decorators.language import languageCB
+from Esproritik.utils.decorators.play import PlayWrapper
+from Esproritik.utils.formatters import formats
+from Esproritik.utils.inline import (
     botplaylist_markup,
     livestream_markup,
     playlist_markup,
     slider_markup,
     track_markup,
 )
-from EsproMusic.utils.logger import play_logs
-from EsproMusic.utils.stream.stream import stream
+from Esproritik.utils.logger import play_logs
+from Esproritik.utils.stream.stream import stream
 from config import BANNED_USERS, lyrical
 
 
@@ -432,9 +432,9 @@ async def play_commnd(
                 return await play_logs(message, streamtype=f"URL Searched Inline")
 
 
-@app.on_callback_query(filters.regex("MusicStream") & ~BANNED_USERS)
+@app.on_callback_query(filters.regex("ritikStream") & ~BANNED_USERS)
 @languageCB
-async def play_music(client, CallbackQuery, _):
+async def play_ritik(client, CallbackQuery, _):
     callback_data = CallbackQuery.data.strip()
     callback_request = callback_data.split(None, 1)[1]
     vidid, user_id, mode, cplay, fplay = callback_request.split("|")

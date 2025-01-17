@@ -1,8 +1,8 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from EsproMusic import app
-from EsproMusic.core.call import Loy
+from Esproritik import app
+from Esproritik.core.call import Loy
 
 welcome = 20
 close = 30

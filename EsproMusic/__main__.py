@@ -49,7 +49,7 @@ async def init():
     except:
         pass
     await Loy.decorators()
-    LOGGER("EsproMusic").info("457370726f204d7573696320426f7420537461727465642053756363657373756c6c792e0a0a4a6f696e2065766572796f6e6520[40]657370726f6d75736963")
+    LOGGER("EsproMusic").info("EsproMusicBot Started Successfully \n\n Yaha App ko nahi aana hai aapni hf jo bhej sakte hai @Esprosupport ")
     await idle()
     await app.stop()
     await userbot.stop()
